@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -11,17 +12,17 @@
   <body>
 
     <div id="container" class="container">
-      <div id="todo" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center">
+      <div id="todo" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center coluna">
         <div class="row">
           <h3>To do</h3>
         </div>
       </div>
-      <div id="doing" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center">
+      <div id="doing" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center coluna">
         <div class="row">
           <h3>Doing</h3>
         </div>
       </div>
-      <div id="done" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center">
+      <div id="done" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center coluna">
         <div class="row">
           <h3>Done</h3>
         </div>

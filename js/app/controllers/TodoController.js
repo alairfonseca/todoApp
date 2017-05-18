@@ -8,6 +8,10 @@ class TodoController {
     let cardView = new CardView($("#todo"));
 
     cardView.update(card);
+    cardView.update(card);
+    cardView.update(card);
+    cardView.update(card);
+    cardView.update(card);
 
     console.log();
   }
