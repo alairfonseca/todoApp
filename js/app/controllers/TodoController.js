@@ -5,7 +5,7 @@ class TodoController {
 
     let card = new Card("titulo 1", "texto 1");
 
-    let cardView = new CardView($("#card"));
+    let cardView = new CardView($("#todo"));
 
     cardView.update(card);
 
