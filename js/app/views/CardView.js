@@ -6,7 +6,7 @@ class CardView extends View {
 
   template() {
     return `
-            <div class="row" draggable="true" ondragstart="drag(event)">
+            <div id="d1" class="row" draggable="true" ondragstart="todoController.drag(event)">
               <div class="card card-outline-primary mb-3 text-center">
                 <div class="card-block">
                 <blockquote class="card-blockquote">

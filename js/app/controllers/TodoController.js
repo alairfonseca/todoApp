@@ -12,4 +12,23 @@ class TodoController {
     console.log();
   }
 
+  allowDrop(event) {
+    event.preventDefault();
+    console.log('allow!');
+  }
+
+  drag(event) {
+    event.dataTransfer.setData("text/html", event.target.id);
+    console.log(event.target.id);
+    console.log('dragou!');
+  }
+
+  drop(event) {
+    console.log('dropou!');
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text/html");
+    console.log(document.getElementById(data));
+    event.target.appendChild(document.getElementById(data));
+  }
+
 }

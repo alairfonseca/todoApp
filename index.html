@@ -10,18 +10,18 @@
   </head>
   <body>
 
-    <div class="container" id="container">
-      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="col-md-4 text-center" id="todo">
+    <div id="container" class="container">
+      <div id="todo" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center">
         <div class="row">
           <h3>To do</h3>
         </div>
       </div>
-      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="col-md-4 text-center" id="doing">
+      <div id="doing" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center">
         <div class="row">
           <h3>Doing</h3>
         </div>
       </div>
-      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="col-md-4 text-center" id="done">
+      <div id="done" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center">
         <div class="row">
           <h3>Done</h3>
         </div>
