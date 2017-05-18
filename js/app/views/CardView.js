@@ -1,12 +1,13 @@
 class CardView extends View {
 
-  constructor(elemento) {
+  constructor(elemento, contador) {
     super(elemento);
+    this._contador = contador;
   }
 
   template() {
     return `
-            <div id="d1" class="row" draggable="true" ondragstart="todoController.drag(event)">
+            <div id="card + '${this._contador}'" class="row" draggable="true" ondragstart="todoController.drag(event)">
               <div class="card card-outline-primary mb-3 text-center">
                 <div class="card-block">
                 <blockquote class="card-blockquote">

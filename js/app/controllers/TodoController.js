@@ -4,8 +4,9 @@ class TodoController {
     let $ = document.querySelector.bind(document);
 
     let card = new Card("titulo 1", "texto 1");
+    this._cardFactory = new CardFactory($("#todo"));
 
-    let cardView = new CardView($("#todo"));
+    let cardView = this._cardFactory.criarCardView();
 
     cardView.update(card);
     cardView.update(card);
