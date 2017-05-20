@@ -1,4 +1,4 @@
-class CardFactory {
+class CardViewFactory {
 
   constructor(elemento) {
     this._contador = 0;

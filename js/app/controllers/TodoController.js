@@ -3,10 +3,10 @@ class TodoController {
   constructor() {
     let $ = document.querySelector.bind(document);
 
-    let card = new Card("titulo 1 hsaushaushauheuheuheueuehuehuehueuheuheuhe", "texto 1euhueaheuaheuaheusaheushaeuasheusaheuaseuua");
-    this._cardFactory = new CardFactory($("#todo"));
+    let card = new Card("titulo 1 hsaushaushauheuheuheueuehuehuehueuheuheuhe", "texto 1 - euhueaheuaheuaheusaheushaeuasheusaheuaseuua");
+    this._cardViewFactory = new CardViewFactory($("#todo"));
 
-    let cardView = this._cardFactory.criarCardView();
+    let cardView = this._cardViewFactory.criarCardView();
 
     cardView.update(card);
 
