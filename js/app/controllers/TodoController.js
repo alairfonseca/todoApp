@@ -12,7 +12,7 @@ class TodoController {
 
   adicionaCard(event) {
     event.preventDefault();
-    let card = new Card("titulo 1 hsaushaushauheuheuheueuehue", "texto 1 - euhueaheuaheuaheusaheushaeuasheusaheuaseuua");
+    let card = new Card("", "");
     let cardView = this._cardViewFactory.criarCardView(this._todoColumn);
     cardView.update(card);
   }
