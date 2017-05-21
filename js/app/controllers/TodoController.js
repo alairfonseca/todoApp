@@ -2,15 +2,19 @@ class TodoController {
 
   constructor() {
     let $ = document.querySelector.bind(document);
-
-    let card = new Card("titulo 1 hsaushaushauheuheuheueuehuehuehueuheuheuhe", "texto 1 - euhueaheuaheuaheusaheushaeuasheusaheuaseuua");
-    this._cardViewFactory = new CardViewFactory($("#todo"));
-
-    let cardView = this._cardViewFactory.criarCardView();
-
-    cardView.update(card);
+    this._cards = [];
+    this._cardViews = [];
+    this._cardViewFactory = new CardViewFactory();
+    this._todoColumn = $("#todo");
 
     console.log();
+  }
+
+  adicionaCard(event) {
+    event.preventDefault();
+    let card = new Card("titulo 1 hsaushaushauheuheuheueuehue", "texto 1 - euhueaheuaheuaheusaheushaeuasheusaheuaseuua");
+    let cardView = this._cardViewFactory.criarCardView(this._todoColumn);
+    cardView.update(card);
   }
 
   allowDrop(event) {

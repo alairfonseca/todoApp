@@ -1,12 +1,14 @@
 class CardViewFactory {
 
-  constructor(elemento) {
+  constructor() {
     this._contador = 0;
-    this._elemento = elemento;
+    this._elemento = '';
   }
 
-  criarCardView() {
+  criarCardView(elemento) {
     this._contador++;
+    this._elemento = elemento;
+    console.log(this._contador + "--");
     return new CardView(this._elemento, this._contador);
   }
 

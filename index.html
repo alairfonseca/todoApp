@@ -12,6 +12,12 @@
   <body>
 
     <div id="container" class="container">
+      <div class="row">
+        <form class="navbar-form navbar-left" role="search">
+          <button class="btn btn-default" onclick="todoController.adicionaCard(event)">Add</button>
+        </form>
+      </div>
+
       <div id="todo" ondrop="todoController.drop(event)" ondragover="todoController.allowDrop(event)" class="col-md-4 text-center coluna">
         <div class="row">
           <h3>To do</h3>
